@@ -24,7 +24,7 @@ public class SeleniumMaven {
 		
 		
 		//Ingresar.Open();
-		Select_Product.Select_Prod();
+		//Select_Product.Select_Prod();
 		
 		
 		/*driver.findElement(By.cssSelector(".col-md-4.quantity-icon-wrapper[data-dropdown-menu=\"user-menu\"]")).click();
@@ -43,7 +43,7 @@ public class SeleniumMaven {
 		driver.findElement(By.cssSelector(".btn-security[ng-disabled=\"!registration.$valid\"]")).click();
 		*/
 		
-		/*driver.findElement(By.id("open-left-menu")).click();
+		driver.findElement(By.id("open-left-menu")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.cssSelector(".nav-link[title=\"Computación\"]")).click();
 		Thread.sleep(3000);
@@ -57,7 +57,7 @@ public class SeleniumMaven {
 		Thread.sleep(2000);
 		List<WebElement> Cantidades=driver.findElements(By.cssSelector(".select-dropdown-list li"));
 		
-		/*for (WebElement element : Cantidades) {
+		for (WebElement element : Cantidades) {
             System.out.println("Paragraph text:" + element.getText());
         }
 		
@@ -107,11 +107,11 @@ public class SeleniumMaven {
 			{
 				System.out.println("precio OK");
 			}
-		}*/
+		}
 		//driver.close();
 	}
 
-	static void Select_Prod()
+	/*static void Select_Prod()
 	{
 		try {
 		driver.findElement(By.id("open-left-menu")).click();
@@ -129,7 +129,7 @@ public class SeleniumMaven {
 		List<WebElement> Cantidades= driver.findElements(By.cssSelector(".select-dropdown-list li"));
 		/*for (WebElement element : Cantidades) {
 	        System.out.println("Paragraph text:" + element.getText());
-	    }*/
+	    }
 		if(Cantidades.size()>=3) 
 		{
 			driver.findElement(By.cssSelector(".select-dropdown-list [data-value=\'2\']")).click();
@@ -150,7 +150,7 @@ public class SeleniumMaven {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
+	}*/
 	
 }
 
